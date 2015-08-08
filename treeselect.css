@@ -1,0 +1,52 @@
+.treeselect { width:250px; }
+
+.treeselect .hiddeninput{ display: none; }
+.treeselect .holder{
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	background-color: white;
+	background-color: -moz-field;
+	border: 1px solid darkgray;
+	box-shadow: 1px 1px 1px 0 lightgray inset;  
+	font: -moz-field;
+	font: -webkit-small-control;
+	margin-top: 5px;
+	padding: 2px 3px;
+	width: 200px;
+	height: 15px;
+}
+.treeselect .droparrow {
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    font-size: 60%;
+    padding: 0 7px;
+    color: black;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+.treeselect .droparrow .down {
+    content: "▼";
+    }
+.treeselect .placeholder{ color: #666666; }
+.treeselect .tree{
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	height: 100px;
+    	z-index: 1;
+	position: absolute;
+	background-color: white;
+	border: black 1px;
+	width: 208px;
+}
+.treeselect .tree ul{ list-style-type:none; }
+.treeselect .tree .optgroup{
+	font-weight: bold;
+}
+.treeselect .tree .option{
+	font-weight: normal;
+}
