@@ -4,6 +4,7 @@
 	options:null,
 	loadUrl: null,
 	loadUrlData: null,
+	autoScroll: true
     };
       
     $.fn.treeselect = function(options) {
@@ -57,6 +58,9 @@
           
         $holder.click(function(){
             $tree.stop().slideToggle(200);
+	    if(options.autoScroll){
+	    	$tree.scrollTop(0);
+	    }
         });
         
 	$options.click(function(){
